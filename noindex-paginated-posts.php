@@ -10,6 +10,9 @@
  * License URI:  http://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain:  noindex-paginated-posts
  * Domain Path:  /languages
+ * Git URI:      https://github.com/wpsitecare/noindex-paginated-posts
+ * GitHub Plugin URI: https://github.com/wpsitecare/noindex-paginated-posts
+ * GitHub Branch: master
  */
 
 // Define the root plugin file.
