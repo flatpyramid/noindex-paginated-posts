@@ -1,6 +1,6 @@
 # Noindex Paginated Posts for WordPress SEO
 
-Force the WordPress SEO by Yoast plugin to noindex sub-paged of paginated posts.
+Force the WordPress SEO by Yoast plugin to noindex sub-pages of paginated posts.
 
 __Contributors:__ [Robert Neu](https://github.com/robneu)  
 __Requires:__ WordPress 4.0  
