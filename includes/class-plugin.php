@@ -50,7 +50,7 @@ class SiteCare_Noindex_Paginated_Posts {
 	* @return void
 	*/
 	public function require_yoast() {
-		// Deactivate if EDD isn't active.
+		// Deactivate if WordPress SEO isn't active.
 		if ( ! defined( 'WPSEO_VERSION' ) ) {
 			deactivate_plugins( NOINDEX_PP_FILE ); // Deactivate ourself
 			wp_die( __( 'Sorry, you can\'t activate unless you have installed WordPress SEO by Yoast.', 'noindex-paginated-posts' ) );
