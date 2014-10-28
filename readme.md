@@ -9,7 +9,7 @@ __License:__ [GPL-2.0+](http://www.gnu.org/licenses/gpl-2.0.html)
 
 This is a simple plugin with no options. Simply install and activate. You must already have WordPress SEO by Yoast installed and activated for this plugin to work.
 
-Once the plugin is activated, all paginated single entries will have their sub-paged set to noindex using the robots meta tag. All other meta robots directives set within the plugin will be left unchanged.
+Once the plugin is activated, all paginated single entries will have their sub-pages set to noindex using the robots meta tag. All other meta robots directives set within the plugin will be left unchanged.
 
 ## Changelog
 
