@@ -30,7 +30,10 @@ require_once( plugin_dir_path( NOINDEX_PP_FILE ) . '/includes/class-plugin.php' 
 * @return object an instance of the main plugin class
 */
 function sitecare_noindex_paginated_posts() {
-	$plugin = new SiteCare_Noindex_Paginated_Posts;
+	static $plugin;
+	if ( null === $plugin ) {
+		$plugin = new SiteCare_Noindex_Paginated_Posts();
+	}
 	return $plugin;
 }
 
