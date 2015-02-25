@@ -66,15 +66,19 @@ class SiteCare_Noindex_Paginated_Posts {
 	* @return string the modifed robots meta rules
 	*/
 	public function noindex_paginated_posts( $robotsstr ) {
-		$paged = get_query_var( 'page' ) ? get_query_var( 'page' ) : false;
+		// Check for post pagination.
+		$paged  = get_query_var( 'page' ) ? get_query_var( 'page' ) : false;
+		// Check for comment pagination.
+		$cpaged = absint( get_query_var( 'cpage' ) ) ? get_query_var( 'cpage' ) : false;
+
 		// Return early if we're not on a singular paginated post.
-		if ( ! is_singular() || ! $paged ) {
+		if ( ! is_singular() || ( ! $paged && ! $cpaged ) ) {
 			return $robotsstr;
 		}
 		// Convert the robots string into an array so we can manipulate it.
 		$robots = explode( ',', $robotsstr );
 		// Delete index from the array if it exists.
-		if ( ( $key = array_search( 'index', $robots ) ) !== false ) {
+		if ( ( false !== $key = array_search( 'index', $robots ) ) ) {
 			unset( $robots[ $key ] );
 		}
 		$follow = 'follow';
