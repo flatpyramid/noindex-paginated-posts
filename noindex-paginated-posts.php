@@ -5,7 +5,7 @@
  *
  * Plugin Name:  Noindex Paginated Posts
  * Plugin URI:   http://www.wpsitecare.com/
- * Description:  Force the WordPress SEO by Yoast plugin to noindex sub-pages of paginated posts.
+ * Description:  Force the WordPress SEO by Yoast plugin to noindex sub-pages of paginated posts. Forked from https://github.com/wpsitecare/noindex-paginated-posts
  * Version:      1.1.0
  * Author:       Robert Neu
  * Author URI:   http://www.wpsitecare.com/
